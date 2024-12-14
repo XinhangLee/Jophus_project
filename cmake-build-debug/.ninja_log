@@ -1,0 +1,11 @@
+# ninja log v6
+3	128	7558874583376809	CMakeFiles/project_linklist.dir/Linklist/Linklist.c.obj	fa9586d335b47a02
+13	137	7558873965475906	CMakeFiles/project_linklist.dir/Josephus.c.obj	a0f64fab60731b8c
+1	125	7558898674642955	CMakeFiles/project_linklist.dir/Josephus.c.obj	b1bed8a9ecd38cb5
+4	128	7558899624745261	CMakeFiles/project_linklist.dir/Linklist/Linklist.c.obj	e2851cf22fd97ec7
+128	227	7558899625990782	project_linklist.exe	c5cc857d94cbabf3
+2	124	7558900135581178	CMakeFiles/project_linklist.dir/Josephus.c.obj	b1bed8a9ecd38cb5
+124	223	7558900136802839	project_linklist.exe	c5cc857d94cbabf3
+3	122	7558900660921899	CMakeFiles/project_linklist.dir/Josephus.c.obj	b1bed8a9ecd38cb5
+12	129	7558900661009281	CMakeFiles/project_linklist.dir/Linklist/Linklist.c.obj	e2851cf22fd97ec7
+129	225	7558900662174006	project_linklist.exe	c5cc857d94cbabf3
