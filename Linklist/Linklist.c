@@ -7,35 +7,13 @@
 #include<stdbool.h>
 #include <stdio.h>
 
-
+//初始化链表。
 void Init(Linklist *list) {
     list->head = NULL;
     list->tail = NULL;
 }
 
-
-bool IsEmpty(Linklist *list) {
-    return list->head == NULL;
-}
-
-int GetHeadVal(Linklist *list) {
-    return list->head->index;
-}
-
-void Print(Linklist *list) {
-    if (IsEmpty(list)) {
-        return;
-    }
-
-    Node const *node = list->head;
-
-    do {
-        printf("%d ", node->index);
-        node = node->next;
-    } while (node != list->head);
-    printf("\n");
-}
-
+//将新节点添加到链表尾部。
 void Append(Linklist *list, const int index){
     Node *node = malloc(sizeof *node);
     if(node == NULL) {
@@ -52,11 +30,7 @@ void Append(Linklist *list, const int index){
     list->tail->next = list->head;
 }
 
-bool IsSingleton(Linklist *list) {
-    return !IsEmpty(list) && list->head == list->tail;
-}
-
-
+//删除指定节点，模拟“杀戮”过程。
 void Delete(Linklist *list, Node *prev) {
     if (IsEmpty(list)) {
         return;
@@ -83,3 +57,32 @@ void Delete(Linklist *list, Node *prev) {
     free(cur);
 }
 
+//打印链表中所有人的编号。
+void Print(Linklist *list) {
+    if (IsEmpty(list)) {
+        return;
+    }
+
+    Node const *node = list->head;
+
+    do {
+        printf("%d ", node->index);
+        node = node->next;
+    } while (node != list->head);
+    printf("\n");
+}
+
+//检查链表是否为空。
+bool IsEmpty(Linklist *list) {
+    return list->head == NULL;
+}
+
+//检查链表是否只有一个元素。
+bool IsSingleton(Linklist *list) {
+    return !IsEmpty(list) && list->head == list->tail;
+}
+
+//获取存活者编号。
+int GetHeadVal(Linklist *list) {
+    return list->head->index;
+}

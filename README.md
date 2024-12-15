@@ -84,6 +84,7 @@ project/
     Print：打印链表中所有人的编号。  
     IsEmpty：检查链表是否为空。
     IsSingleton：检查链表是否只有一个元素。
+    GetHeadVal：获取存活者编号。
 
 #### LinkList/LinkList.h 包含了循环链表的声明，包括节点结构体和所有链表操作函数的声明。
 

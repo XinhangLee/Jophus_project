@@ -28,12 +28,14 @@ int main(){
     return 0;
 }
 
+//将 n 个人按顺序加入到循环链表中。
 void SitAroundCircle(Linklist *list,const int num) {
     for (int i = 1; i <= num; ++i) {
         Append(list,i);
     }
 }
 
+//模拟约瑟夫环的“杀戮”过程，直到剩下一个人。
 void KillUntilOne(Linklist *list) {
     Node *node = list->head;
 
@@ -43,6 +45,7 @@ void KillUntilOne(Linklist *list) {
     }
 }
 
+//返回最后剩下的人的编号。
 int GetSurvivor(Linklist *list) {
     return GetHeadVal(list);
 }
