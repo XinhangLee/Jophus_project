@@ -73,7 +73,7 @@ void Print(Linklist *list) {
 }
 
 //检查链表是否为空。
-bool IsEmpty(Linklist const *list) {
+bool IsEmpty(Linklist *list) {
     return list->head == NULL;
 }
 
@@ -83,6 +83,6 @@ bool IsSingleton(Linklist *list) {
 }
 
 //获取存活者编号。
-int GetHeadVal(Linklist const *list) {
+int GetHeadVal(Linklist *list) {
     return list->head->index;
 }
