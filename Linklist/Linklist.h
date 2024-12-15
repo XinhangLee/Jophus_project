@@ -6,6 +6,7 @@
 #define LINKLIST_H
 
 //TODO:adding your code here.
+
 #include <stdbool.h>
 
 //(1) define data type:linklist (circular).
