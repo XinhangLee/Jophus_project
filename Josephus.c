@@ -23,7 +23,7 @@ int main(){
     KillUntilOne(&list);
     const int survivor = GetSurvivor(&list);
 
-    printf("%d : %d\n",NUM,survivor);
+    printf("num : survivor = %d : %d\n",NUM,survivor);
 
     return 0;
 }
